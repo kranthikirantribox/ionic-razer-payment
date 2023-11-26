@@ -14,7 +14,16 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <input type="text" placeholder="Enter Merchanthost" [(ngModel)]="merchanthost">
+    <input type="text" placeholder="Enter OpType" [(ngModel)]="opType">
+    <input type="text" placeholder="Enter Currency" [(ngModel)]="currency">
+    <input type="number" placeholder="Enter Amount" [(ngModel)]="amount">
+    <input type="text" placeholder="Enter OrderId" [(ngModel)]="orderId">
+    <input type="text" placeholder="Enter Channel" [(ngModel)]="channel">
+    <input type="text" placeholder="Enter Tid" [(ngModel)]="tid">
+    <button class="custom-button" (click)="onButtonClick()">OK</button>
+    <textarea rows="4" cols="50" [(ngModel)]="results_data">
+  
+    </textarea>
   </div>
 </ion-content>
